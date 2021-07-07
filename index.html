@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Agronomist adquisición de productos nacionales e internacionales" />
+        <meta name="author" content="Carolina Villegas" />
+        <!-- SEO Meta Tags -->
+        <meta name="keywords" content="Dashboard, Google Charts, HTML, CSS, JavaScript, Bootstrap">
+        <title>Final IHC</title>
+
+
+        <link rel="stylesheet" type="text/css" href="css/card.css">
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+
+        </script>
+        <link href="js/scripts.js">
+
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="#!">Agronomist</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Planes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Se parte de nosotros</a></li>
+                        <a class="btn btn-dark btn-lg px-1 me-sm-3" href="#features">Probar</a>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2"> Agronomist</h1>
+                            <p class="lead text-white-50 mb-4">Pensado para facilitarte la venta de materiales e insumos agricolas</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <div class="page-content page-container" id="page-content">
+                                    <div class="padding">
+                                        <div class="row container d-flex justify-content-center">
+                                            <div class="template-demo mt-2">
+                                                <button class="btn btn-outline-light btn-icon-text ">
+                                                    <i class="fa fa-apple btn-icon-prepend mdi-36px"></i>
+                                                    <span class="d-inline-block text-left">
+                                                        <small class="font-weight-light d-block">Available on the</small> App Store </span>
+
+                                                </button> <button class="btn btn-outline-light btn-icon-text"> <i class="fa fa-android btn-icon-prepend mdi-36px"></i>
+                                                <span class="d-inline-block text-left"> <small class="font-weight-light d-block">Get it on the</small> Google Play </span> </button> </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="py-5 border-bottom" >
+
+            <h1 class="title"> Servicios</h1>
+            <p class="lead text-black-50 mb-4 text-center my-5">Servicio especializado en la adquisición de productos
+                nacionales e internacionales para la atención de los pedidos de venta de los agricultores</p>
+            <div class="container_card ">
+                <div class="card">
+                    <img src="img/coperativa.jpg">
+                    <br>
+                    <h4>Asesoría para Agricultores</h4>
+                    <br>
+                    <p>Para los agricultores que desean mejorar sus prácticas de gestión
+                        agrícola </p>
+                    <a href="#">Leer mas  </a>
+
+                </div>
+                <div class="card">
+                    <img src="img/corporativo.jpg">
+
+                    <h4>Asesoría para Cooperativas</h4>
+
+                    <p>Organizar a los agricultores en una cooperativa suele ser una tarea
+                        complicada que requiere mucho tiempo.</p>
+                    <a href="#">Leer mas  </a>
+
+                </div>
+                <div class="card">
+                    <img src="img/agronomist.jpg">
+                    <br>
+                    <h4>Asesoría para Corporativo</h4>
+                    <br>
+                    <p>Orientado para agricultores avanzados que requieren</p>
+                    <a href="#">Leer mas  </a>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <!-- Features section-->
+        <section class="py-5 border-bottom " id="features" >
+
+            <div  id="piechart" style="width: 900px; height: 500px; "></div>
+        </section>
+
+        <!-- Pricing section-->
+        <section class="bg-light py-5 border-bottom">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Planes</h2>
+                    <p class="lead mb-0">Mira nuestros planes disponibles pensados para ti</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <!-- Pricing card free-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">Agricultor</div>
+                                <div class="mb-3">
+                                    <span class="display-4 fw-bold">Gratis</span>
+
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>Registra información en tu dispositivo móvil</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Asesoría sobre técnicas de cultivo y tratamiento de los suelos
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Asesoría para evitar que se desarrollen plagas o enfermedades.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Agrupe los registros de las dimensiones de sus terrenos de cultivo y los datos de la
+                                        ubicación de sus tierras como son altitud, latitud y longitud.
+                                    </li>
+
+
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Seleccionar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pricing card pro-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">Cooperativas</div>
+                                <div class="mb-3">
+                                    <span class="display-4 fw-bold">$8</span>
+
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>Mantenen información de hasta 20 agricultores asociados</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Registro central de todos los agricultores en la cooperativa, considerando los registros
+                                        individuales de sus tierras.
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Programación de seminarios de temas agrícolas
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Analice la producción a nivel global y de cada agricultor para identificar los factores
+                                        claves de la productividad.
+                                    </li>
+
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-primary" href="#!">Seleccionar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pricing card enterprise-->
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">Corporativo</div>
+                                <div class="mb-3">
+                                    <span class="display-4 fw-bold">$16</span>
+
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong> Mantenen
+                                            una cantidad de hasta 100 terrenos vinculados</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>  Realiza in-app
+                                            purchases de farmers-packs de 10, 50 y 100 terrenos agrícolas adicionales</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Atención a consultas directas con un asesor asignado
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Controle sus ventas, gastos y el flujo de efectivo para no perjudicar sus finanzas.
+                                    </li>
+
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Seleccionar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 border-bottom" >
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Se parte de nosotros</h2>
+                    <p class="lead mb-0">Servicio que ofrece oportunidades de trabajo a los profesionales en
+                        agronomía para convertirse en asesores o distribuidores de productos agrónomos </p>
+                    <br>
+                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Contactarnos</a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="page-footer font-small blue pt-4 bg-dark text-white">
+
+            <!-- Footer Links -->
+            <div class="container-fluid text-center text-md-left">
+
+                <!-- Grid row -->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 mt-md-0 mt-3">
+
+                        <!-- Content -->
+                        <h5 class="text-uppercase">Agronomist</h5>
+
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 mb-md-0 mb-3">
+
+
+                        <ul class="list-unstyled">
+
+                            <li>
+                                <a href="#!">Contacto</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2021 Copyright:
+
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!--JAVASCRIPT-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+</html>
